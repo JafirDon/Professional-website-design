@@ -1,0 +1,278 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+.nav{
+    background-color: rgb(82, 156, 185);
+    height: 80px;
+}
+.logo{
+    display: flex;
+    font-size: 35px;
+    margin-left: 40px;
+    position: relative;
+    top: 15px;
+    
+}
+.logo a{
+    color: floralwhite;
+}
+
+.nav ul{
+    
+    float: right;
+    margin-right: 20px;
+    
+    
+}
+.nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+    position: relative;
+    bottom: 8px;
+}
+.nav ul li a{
+    color:  floralwhite;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 7px 13px;
+    border-radius: 10px 10px;
+}
+.nav ul li a:hover{
+    color: darkslateblue;
+    background-color: floralwhite;
+    transition: .5s;
+}
+#slider{
+    overflow: hidden;
+}
+#slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+#slider figure img{
+    width: 20%;
+    height: 90%;
+    float: left;
+}
+@keyframes slider {
+    0%{
+        left: 0;
+    }
+    10%{
+        left: 0;
+    }
+    25%{
+        left: -100%;
+    }
+    40%{
+        left: -100%;
+    }
+    55%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    85%{
+        left: -300%;
+    }
+    100%{
+        left: -300%;
+    }
+    
+}
+.service{
+    background-image: url("img/color.png");
+    height: 600px;
+    width: 100%;
+    padding: 20px;
+    
+}
+.service h1{
+    font-size: 35px;
+    color: floralwhite;
+    text-align: center;
+}
+
+.box1,.box2,.box3{
+     width: 320px;
+     height: 320px;
+     margin: 100px 0;
+     margin-right: 50px;
+     margin-left: 50px;
+     background-repeat: no-repeat;
+     background-size: cover;
+     border-radius: 10px 10px;
+     box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+    
+}
+.boxes{
+    display: flex;
+    justify-content: space-between;
+}
+.box1{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6 )),url("img/pic1.png");
+} 
+.box2{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("img/pic2.jpg");
+}
+.box3{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("img/pic3.jpg");
+}
+.box1 span,
+.box2 span,
+.box3 span{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    position: relative;
+    top: 15%;
+    left: 42%;
+}
+.heading{
+    color: floralwhite;
+    font-size: 27px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+   
+}
+.details{
+    color: rgb(197, 211, 224);  
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+.box1 button,
+.box2 button,
+.box3 button{
+    color: floralwhite;
+    background-color:  rgb(80, 124, 168);
+    padding: 8px;
+    border-radius: 10px 10px;
+    box-shadow: none;
+    position: relative;
+    top: 15%;
+    left: 35%;
+    margin-top: 17px;
+}
+.box1 button:hover,
+.box2 button:hover,
+.box3 button:hover
+{
+    color: rgb(80, 124, 168);
+    background-color: floralwhite;
+}
+.Contact{
+    background-image: url("img/color.png");
+    height: 300px;
+	padding: 5% 10%;
+    text-align: center;
+}
+.Contact h1{
+    color: floralwhite;
+    position: relative;
+    bottom: 20%;    
+}
+.form{
+	margin-bottom: 15px;
+}
+.form input[type="text"]{
+	width: 250px;
+	padding: 12px 20px;
+	margin-bottom: 10px;
+	border: 1px solid gray; 
+}   
+.form textarea{
+	width: 250px;
+	padding: 12px 20px;
+	height: 80px;
+	border: 1px solid gray;
+}
+.form button{
+    padding: 13px 7px;
+    color: floralwhite;
+    background-color:  rgb(80, 124, 168);
+    padding: 8px;
+    border-radius: 10px 10px;
+    margin-top: 5px;
+}
+.form button:hover{
+    color: rgb(80, 124, 168);
+    background-color: floralwhite;
+}
+.space{
+    color: white;
+    width: 100%;
+    height: 200px;
+}
+.footer{
+    background-image: url("img/blue.png");
+    display: flex;
+    height: 300px;
+    width: 100%;
+    padding: 30px;
+    justify-content: space-around;
+
+}
+.services{
+    color: floralwhite;
+    padding: 10px;
+
+}
+.about{
+    color: floralwhite;
+    padding: 10px;
+}
+.services p,
+.about p
+{
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.services ul li a,
+.about ul li a{
+    color: rgb(98, 99, 100);
+    padding: 8px 3px;
+}
+.services ul li a:hover,
+.about ul li a:hover{
+    color: #fff;
+}
+
+.icon p{
+    color: floralwhite;
+    padding: 10px;
+    margin: 10px;
+}
+.icon img{
+    
+    padding: 10px;
+}
+.icon img:hover{
+    background-color: #fff;
+}
+.end{
+    color: floralwhite;
+    background-color: black;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+}
